@@ -37,13 +37,6 @@ Using `analysis.sql`, seven business questions were evaluated against the `custo
 ## 5. Interactive Dashboard (Power BI)
 The Power BI report connects directly to `cleaned_bank_churn.csv` and provides dynamic filtering across **Country**, **Gender**, and **Active Member** status.
 
-![Power BI Dashboard Preview](dahsboard_powerbi/dashboard_preview.png)
-
-**Dashboard Highlights:**
-* **Executive KPI Strip:** Tracks Total Customers, Churned Customers, Churn Rate (%), and Total Balance Lost.
-* **Retention vs. Churn Breakdown:** Donut chart illustrating overall portfolio retention (`79.63%` retained vs. `20.37%` churned).
-* **Segment Risk Visuals:** Compares churn rates across Python-engineered `age_group` and `balance_segment` categories alongside customer `tenure` trends.
-
 ---
 
 ## 6. Actionable Business Recommendations
