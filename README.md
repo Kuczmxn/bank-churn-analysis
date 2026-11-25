@@ -37,7 +37,7 @@ Using `analysis.sql`, seven business questions were evaluated against the `custo
 ## 5. Interactive Dashboard (Power BI)
 The Power BI report connects directly to `cleaned_bank_churn.csv` and provides dynamic filtering across **Country**, **Gender**, and **Active Member** status.
 
-![Power BI Dashboard Preview](dahsboard_powerbi/dashboard_preview
+![Power BI Dashboard Preview](dahsboard_powerbi/dashboard_preview.png)
 
 **Dashboard Highlights:**
 * **Executive KPI Strip:** Tracks Total Customers, Churned Customers, Churn Rate (%), and Total Balance Lost.
