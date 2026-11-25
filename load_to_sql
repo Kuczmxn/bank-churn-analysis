@@ -1,0 +1,20 @@
+import pandas as pd
+import sqlite3
+
+# 1. Loading the cleaned data from CSV file
+df = pd.read_csv('cleaned_bank_churn.csv')
+
+# 2. Establishing a connection to the SQLite database
+conn = sqlite3.connect("bank_churn.db")
+
+# 3. Loading the dataframe into a SQL table named 'customers'
+df.to_sql('customers', conn, if_exists='replace', index=False)
+
+# 4. Checking if all rows were loaded
+row_count = pd.read_sql("SELECT COUNT(*) AS rows_in_table FROM customers", conn)
+print(row_count)
+
+# 5. Closing the database connection
+conn.close()
+
+print("Data loaded into SQL database successfully")
